@@ -1,0 +1,55 @@
+/* General body styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Game board styling */
+.game-board {
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border: 2px solid #fff;
+    position: relative;
+}
+
+/* Snake body */
+.snake {
+    background-color: #00ff00;
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 2px;
+}
+
+/* Snake food */
+.food {
+    background-color: #ff0000;
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 50%;
+}
+
+/* Controls for start button */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    border: none;
+    color: #282c34;
+    border-radius: 5px;
+}
